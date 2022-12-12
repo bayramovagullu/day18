@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- /**TASK 12
+    * Write a function which cleans text. Clean the following text. After cleaning, count three most frequent words in the string.
+    * INPUT:sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+    * OUTPUT: console.log(cleanText(sentence))  
+    * OUTPUT: I am a teacher and I love teaching There is nothing as more rewarding as educating and empowering people I found teaching more interesting than any other jobs Does this motivate you to be a teacher
+    */ -->
+
+
+    <script>
+     
+       const sentence = '%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.\
+T%he%re i%s n%o%th%ing as m%ore r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing \
+p%e%o%ple.\
+I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.\
+D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.'
+
+        cleanText = sentence.replace(/%/g, '')
+        console.log(cleanText)  
+    </script>
+</body>
+
+</html>

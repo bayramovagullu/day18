@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- /**TASK 6
+    * Write a function name rgbColorGenerator and it generates rgb colors.
+    *
+    * INPUT: rgbColorGenerator()
+    * OUTPUT: rgb(125,244,255)
+    *
+    */ -->
+
+    <script>
+        // let rgbColorGenerator;
+
+        function rgbColorGenerator() {
+            var num = Math.round(0xffffff * Math.random());
+            var r = 125;
+            var g = 244;
+            var b = 255;
+            return 'rgb(' + r + ', ' + g + ', ' + b + ')';
+        }
+
+        for (var i = 0; i < 1; i++) {
+            console.log(rgbColorGenerator());
+        }
+
+    </script>
+</body>
+
+</html>

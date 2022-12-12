@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- /**TASK 9
+    * const a = [4, 5, 8, 9]
+    * const b = [3, 4, 5, 7]
+    * const countries = ['Finland', 'Sweden', 'Norway']
+    *
+    * create an empty set
+    * Create a set containing 0 to 10 using loop
+    * Remove an element from a set
+    * Clear a set
+    * Create a set of 5 string elements from array
+    * Create a map of countries and number of characters of a country
+    * Find a union b
+    * Find a intersection b
+    * Find a with b
+    */ -->
+
+    <script>
+        const a = [4, 5, 8, 9]
+        const b = [3, 4, 5, 7]
+        const countries = ['Finland', 'Sweden', 'Norway']
+        // 1
+        // const all = new Set()
+        // console.log(all);
+        // 2
+
+        // 3
+        const country = new Map();
+        country.set('Finland')
+        country.set('Sweden')
+        country.set('Norway')
+
+        // 4
+        const all = new Set();
+        all.add('Happy');
+        all.add('New');
+        all.add('Year');
+        console.log(all.size);
+
+        all.clear();
+        console.log(all.size);
+
+
+        // 5
+
+        // 6
+        const languages = [
+            'English',
+            'Finnish',
+            'French',
+            'Spanish',
+            'French',
+        ]
+
+        const setOfLanguages = new Set(languages)
+        console.log(setOfLanguages)
+        // 7
+        var union = [...new Set([...a, ...b])];
+        console.log(union);
+        // 8
+        // function getIntersection(a, b) {
+        //     const intersection = new Set(
+        //         [...a].filter(element => b.has(element))
+        //     );
+
+        //     return intersection;
+        // }
+    //    console.log((a,b));
+
+        // 9
+
+        // 10
+
+    </script>
+</body>
+
+</html>
